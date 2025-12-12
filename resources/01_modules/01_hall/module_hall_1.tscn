@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdxguxbhh2rlj"]
+
+[ext_resource type="PackedScene" uid="uid://dqlgu6mmvj6dn" path="res://resources/02_tiles/01_floor/floor_hall.tscn" id="1_7p5j0"]
+[ext_resource type="PackedScene" uid="uid://d3js4raqhaa34" path="res://resources/02_tiles/02_wall/wall_10m_gated.tscn" id="2_conrt"]
+[ext_resource type="PackedScene" uid="uid://grxtqkneotbq" path="res://resources/02_tiles/02_wall/wall_10m_default.tscn" id="3_gkupb"]
+
+[node name="hall_3_gated" type="Node3D"]
+
+[node name="floor_default" parent="." instance=ExtResource("1_7p5j0")]
+
+[node name="floor_default2" parent="." instance=ExtResource("1_7p5j0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+
+[node name="wall_gated" parent="." instance=ExtResource("2_conrt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="wall_default" parent="." instance=ExtResource("3_gkupb")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1, 10)
+
+[node name="wall_default2" parent="." instance=ExtResource("3_gkupb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10, 1, 0)
+
+[node name="wall_default3" parent="." instance=ExtResource("3_gkupb")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10, 1, 10)

@@ -1,11 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://ci5lcjdrs6wd1"]
 
-[ext_resource type="PackedScene" uid="uid://dqlgu6mmvj6dn" path="res://resource/map/02_floor/floor_default.tscn" id="1_pvv7k"]
-[ext_resource type="PackedScene" uid="uid://d3js4raqhaa34" path="res://resource/map/03_wall/wall_gated.tscn" id="2_cxk0e"]
+[ext_resource type="PackedScene" uid="uid://dqlgu6mmvj6dn" path="res://resources/02_tiles/01_floor/floor_hall.tscn" id="1_pvv7k"]
+[ext_resource type="PackedScene" uid="uid://d3js4raqhaa34" path="res://resources/02_tiles/02_wall/wall_10m_gated.tscn" id="2_cxk0e"]
 
 [node name="hall_4_gated" type="Node3D"]
 
 [node name="floor_default" parent="." instance=ExtResource("1_pvv7k")]
+
+[node name="floor_default2" parent="." instance=ExtResource("1_pvv7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
 
 [node name="wall_gated" parent="." instance=ExtResource("2_cxk0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

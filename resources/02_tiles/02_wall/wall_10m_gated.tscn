@@ -12,7 +12,7 @@ data = PackedVector3Array(-1.0300293, -0.25, 0.5, -1.0300293, -0.25, -0.5, -1.03
 [node name="wall_gated" type="StaticBody3D"]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0014648, 1.25, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.25, 0.5)
 size = Vector3(4, 2.5, 1)
 
 [node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="."]
@@ -20,7 +20,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0014648, 1.25, 0.5)
 shape = SubResource("ConcavePolygonShape3D_n4qdd")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.001526, 1.25, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1.25, 0.5)
 size = Vector3(4, 2.5, 1)
 
 [node name="CSGBakedCollisionShape3D2" type="CollisionShape3D" parent="."]
@@ -28,8 +28,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.001526, 1.25, 0.5)
 shape = SubResource("ConcavePolygonShape3D_0qvp8")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.008545, 2.25, 0.5)
-size = Vector3(2.0600586, 0.5, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.25, 0.5)
+size = Vector3(2, 0.5, 1)
 
 [node name="CSGBakedCollisionShape3D3" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.008545, 2.25, 0.5)
