@@ -3,36 +3,36 @@ using System;
 
 public partial class Player : CharacterBody3D
 {
-    [Export]
-    public int Speed { get; set; } = 5;
+	[Export]
+	public int Speed { get; set; } = 5;
 
-    private Vector3 _targetVelocity = Vector3.Zero;
+	private Vector3 _targetVelocity = Vector3.Zero;
 
-    public override void _PhysicsProcess(double delta)
-    {
-        var direction = Vector3.Zero;
+	public override void _PhysicsProcess(double delta)
+	{
+		var direction = Vector3.Zero;
 
-        if (Input.IsActionPressed("move_left"))
-            direction.X -= 1;
+		if (Input.IsActionPressed("move_left"))
+			direction.X -= 1;
 
-        if (Input.IsActionPressed("move_right"))
-            direction.X += 1f;
+		if (Input.IsActionPressed("move_right"))
+			direction.X += 1f;
 
-        if (Input.IsActionPressed("move_forward"))
-            direction.Z -= 1f;
+		if (Input.IsActionPressed("move_forward"))
+			direction.Z -= 1f;
 
-        if (Input.IsActionPressed("move_back"))
-            direction.Z += 1f;
+		if (Input.IsActionPressed("move_back"))
+			direction.Z += 1f;
 
-        if (direction != Vector3.Zero)
-        {
-            direction = direction.Normalized();
-            GetNode<Node3D>("Pivot").Basis = Basis.LookingAt(direction);
-        }
+		if (direction != Vector3.Zero)
+		{
+			direction = direction.Normalized();
+			GetNode<Node3D>("Pivot").Basis = Basis.LookingAt(direction);
+		}
 
-        _targetVelocity.X = direction.X * Speed;
-        _targetVelocity.Z = direction.Z * Speed;
-        Velocity = _targetVelocity;
-        MoveAndSlide();
-    }
+		_targetVelocity.X = direction.X * Speed;
+		_targetVelocity.Z = direction.Z * Speed;
+		Velocity = _targetVelocity;
+		MoveAndSlide();
+	}
 }

@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3scmm5r6a23q"]
 
-[ext_resource type="PackedScene" uid="uid://ci5lcjdrs6wd1" path="res://map_module_hallway.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://ci5lcjdrs6wd1" path="res://resource/map/01_modules/hall_4_gated.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://dxmho8asgk1f6" path="res://player.tscn" id="2_h2yge"]
 
 [node name="Main" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource("2_h2yge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1457901, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.738, 2, 2.249)
 
 [node name="CameraPivot" type="Marker3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0)
@@ -18,4 +18,4 @@ size = 5.06
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.8387181, 0.50928307, -0.1928282, -0.013571054, 0.37353265, 0.92751783, 0.5443967, -0.77530915, 0.32019997, -2.7572322, 5.485981, 1.7707809)
 
-[node name="map_module_hallway" parent="." instance=ExtResource("2_0xm2m")]
+[node name="hall_4_gated" parent="." instance=ExtResource("2_0xm2m")]
